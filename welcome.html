@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Connect 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to Connect 4!</h1>
+        <h2>Select Game Mode:</h2>
+        <button id="pvpButton">Player 1 vs Player 2</button>
+        <button id="pvcButton">Player vs Computer</button>
+    </div>
+
+    <script>
+        document.getElementById('pvpButton').onclick = function () {
+            window.location.href = 'index.html?mode=pvp';
+        };
+        document.getElementById('pvcButton').onclick = function () {
+            window.location.href = 'index.html?mode=pvc';
+        };
+    </script>
+</body>
+
+</html>
